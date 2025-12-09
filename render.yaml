@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: proptech-signaling
+    env: node
+    plan: free    # use Render free tier
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
